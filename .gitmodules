@@ -1,0 +1,15 @@
+[submodule "src/roboy_communication"]
+	path = src/roboy_communication
+	url = https://github.com/Roboy/roboy_communication
+[submodule "src/roboy_models"]
+	path = src/roboy_models
+	url = https://github.com/Roboy/roboy_models
+[submodule "src/common_utilities"]
+	path = src/common_utilities
+	url = https://github.com/Roboy/common_utilities
+[submodule "src/roboy_simulation"]
+	path = src/roboy_simulation
+	url = https://github.com/letrend/roboy_simulation
+[submodule "src/roboy_rqt_plugins"]
+	path = src/roboy_rqt_plugins
+	url = https://github.com/Roboy/roboy_rqt_plugins
