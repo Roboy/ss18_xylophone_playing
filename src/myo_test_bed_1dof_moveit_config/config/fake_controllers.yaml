@@ -1,5 +1,0 @@
-controller_list:
-  - name: fake_link_2_controller
-    joints:
-      - joint_1
-      - joint_2
