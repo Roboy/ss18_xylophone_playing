@@ -10,3 +10,6 @@
 [submodule "src/roboy_rqt_plugins"]
 	path = src/roboy_rqt_plugins
 	url = https://github.com/Roboy/roboy_rqt_plugins
+[submodule "src/roboy_simulation"]
+	path = src/roboy_simulation
+	url = https://github.com/letrend/roboy_simulation
