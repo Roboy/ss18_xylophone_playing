@@ -117,6 +117,7 @@ For gazebo to find the meshes, create a symlink:
 mkdir -p ~/.gazebo/models
 ln -s path/to/ss18_xylophone_playing/src/roboy_models/roboy_2_0_simplified ~/.gazebo/models/
 ln -s path/to/ss18_xylophone_playing/src/roboy_models/roboy_2_0_left_arm_simplified ~/.gazebo/models/
+ln -s path/to/ss18_xylophone_playing/src/roboy_models/roboy_2_0_left_arm_elbow ~/.gazebo/models/
 ```
 Add whatever other models you need in the same manner.
 
@@ -124,8 +125,16 @@ Add whatever other models you need in the same manner.
 ```
 #!bash
 cd path/to/ss18_xylophone_playing/src/roboy_simulation/launch
+sudo apt install ros-kinetic-rqt-rviz
+```
+then add the rviz plugin to rqt
+make sure you add the plugins on the left in rviz and change the fixed frame to world
+```
+#!bash
 roslaunch roboy_simulation roboy_2_0_left_arm_elbow.launch
 ```
+You can set the target position on the server as so:
+rosparam set /target_pos [1.5,0,0,0]
 
 ## How to use
 You can now write your own plugins and edit the launch file to incorporate them.
