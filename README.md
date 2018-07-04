@@ -45,7 +45,7 @@ mv gazebo_models/osrf-gazebo_models-*/* ~/.gazebo/models
 ### clone repository
 ```
 #!bash
-git clone --recursive https://github.com/Roboy/ss18_xylophone_playing
+git clone --recursive https://github.com/Roboy/ss18_xylophone_playing.git
 cd ss18_xylophone_playing
 ```
 #### The roboy_simulation repository is private for now due to copyright reasons. Therefore you need to ask for permission to clone!
