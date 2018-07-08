@@ -16,10 +16,7 @@ sudo apt install libncurses5-dev
 ```
 ### roboy-ros-control
 For setting up roboy-ros-control see [here](https://github.com/Roboy/roboy-ros-control)
-```
-#!bash
-sudo apt install libncurses5-dev
-```
+
 ### ros
 ```
 #!bash
