@@ -66,10 +66,6 @@ sudo apt install libopenni2-0
 ```
 
 ## How to build
-### roboy-ros-control
-
-
-
 
 ### IMPORTANT: environmental variables and sourceing
 For both build and especially running the code successfully you will need to define some env variables and source some stuff. Add the following lines to your ~/.bashrc (adjusting the paths to your system):
