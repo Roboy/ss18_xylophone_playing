@@ -139,3 +139,7 @@ rosparam set /target_pos [1.5,0,0,0]
 ## How to use
 You can now write your own plugins and edit the launch file to incorporate them.
 In future versions you will be able to start a script that uses a midi input which will trigger movements of Roboy. 
+
+# Further Info
+For more info on the project visit our Confluence Page:
+https://devanthro.atlassian.net/wiki/spaces/SS18/pages/280100944/Movement+Control
