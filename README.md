@@ -23,11 +23,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB0
 sudo apt-get update
 
 sudo apt install ros-kinetic-desktop-full
-sudo apt install ros-kinetic-controller-interface ros-kinetic-controller-manager ros-kinetic-control-toolbox ros-kinetic-transmission-interface ros-kinetic-joint-limits-interface ros-kinetic-ecl-geometry ros-kinetic-gazebo-ros-control  ros-kinetic-grid-map-ros
-```
-### additional ros packages for the roboy-ros-control repository
-```
-sudo apt install ros-kinetic-rosbridge-suite
+sudo apt install ros-kinetic-controller-interface ros-kinetic-controller-manager ros-kinetic-control-toolbox ros-kinetic-transmission-interface ros-kinetic-joint-limits-interface ros-kinetic-ecl-geometry ros-kinetic-gazebo-ros-control  ros-kinetic-grid-map-ros ros-kinetic-rosbridge-suite
 ```
 
 We will need more packages, which we will go into later on.
