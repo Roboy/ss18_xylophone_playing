@@ -58,6 +58,11 @@ cd ss18_xylophone_playing
 sudo apt-get install libpcap0.8-dev     # package required by powerlink
 sudo apt-get install protobuf-compiler  # NOTFOUND error fix: https://github.com/ethz-asl/rotors_simulator/issues/354
 sudo apt-get install lib32ncurses5-dev  # fix for http://stackoverflow.com/questions/14416487/gcc-usr-bin-ld-error-cannot-find-lncurses
+sudo apt install ros-kinetic-moveit
+sudo apt install libxml++2.6-dev
+sudo apt install ros-kinetic-eus-qpoases
+sudo apt install libopenni2-0
+
 ```
 
 ## How to build
