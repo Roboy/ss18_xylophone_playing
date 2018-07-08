@@ -14,8 +14,6 @@ sudo apt install git
 #!bash
 sudo apt install libncurses5-dev
 ```
-### roboy-ros-control
-For setting up roboy-ros-control see [here](https://github.com/Roboy/roboy-ros-control)
 
 ### ros
 ```
@@ -68,6 +66,8 @@ sudo apt install libopenni2-0
 ```
 
 ## How to build
+### roboy-ros-control
+For setting up roboy-ros-control see [here](https://github.com/Roboy/roboy-ros-control)
 
 #### Update myoFPGA path
 
