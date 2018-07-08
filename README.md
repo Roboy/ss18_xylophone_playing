@@ -88,7 +88,7 @@ source devel/setup.bash
 catkin_make
 ```
 #### The first build will probably fail, as the setup bash file does not exist yet, just run:
-``
+```
 #!bash
 source devel/setup.bash
 catkin_make
