@@ -69,15 +69,7 @@ sudo apt install libopenni2-0
 ### roboy-ros-control
 For setting up roboy-ros-control see [here](https://github.com/Roboy/roboy-ros-control)
 
-#### Update myoFPGA path
 
-The last thing you have to do is to update a library path. This is an absolute path and therefore, it has to be changed to your local absolute path. 
-Please ensure that you are in the roboy-ros-control package and execute then the following command: 
-
-```bash
-#!bash
-sed -i "s|/home/roboy/workspace/myoFPGA/myoFPGA|$(pwd)|g" src/roboy_managing_node/include/roboy_managing_node/myoMaster.hpp
-```
 
 ### IMPORTANT: environmental variables and sourceing
 For both build and especially running the code successfully you will need to define some env variables and source some stuff. Add the following lines to your ~/.bashrc (adjusting the paths to your system):
@@ -100,7 +92,7 @@ source devel/setup.bash
 catkin_make
 ```
 #### The first build will probably fail, as the setup bash file does not exist yet, just run:
-```
+``
 #!bash
 source devel/setup.bash
 catkin_make
