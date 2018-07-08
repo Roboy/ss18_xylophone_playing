@@ -117,6 +117,9 @@ ln -s path/to/ss18_xylophone_playing/src/roboy_models/roboy_2_0_left_arm_elbow ~
 ```
 Add whatever other models you need in the same manner.
 
+### Still having trouble?
+Sometimes roboy-ros-control can help resolving issues, just install https://github.com/Roboy/roboy-ros-control and try again.
+
 ## How to test
 ```
 #!bash
