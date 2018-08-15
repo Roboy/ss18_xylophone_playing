@@ -36,6 +36,10 @@ mv gazebo_models/osrf-gazebo_models-*/* ~/.gazebo/models
 git clone --recursive https://github.com/Roboy/ss18_xylophone_playing.git
 cd ss18_xylophone_playing
 ```
+
+Make sure to checkout to the master branch for each of the submodules apart from `src/roboy_simulation/`, which needs to be on branch `caspr_independent` on an older commit in case the CASPR versions are not compatible (8ce5fc9119b9c3069f2204df18a086c92b1e66ca) and `src/roboy_controller/` on `sxp-moveit-independent`. 
+
+
 #### The roboy_simulation repository is private for now due to copyright reasons. Therefore you need to ask for permission to clone!
 
 ## How to build
