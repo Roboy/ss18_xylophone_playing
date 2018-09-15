@@ -30,6 +30,9 @@ unzip osrf-gazebo_models-*.zip -d gazebo_models
 mv gazebo_models/osrf-gazebo_models-*/* ~/.gazebo/models
 ```
 
+### roboticsLibrary
+https://github.com/Roboy/rl
+
 ### clone repository
 ```
 #!bash
@@ -69,6 +72,12 @@ Then you can build with:
 #!bash
 catkin_make
 ```
+As ROS has so many components it might be that we missed some packages. If the build fails it is very likely that you are just missing a dependency. try and find out what you are missing and use 
+```
+#!bash
+sudo apt search
+```
+plus some parts of that dependecy name (e.g. just the name without the version) to find that stuff.
 
 ### symlink to meshes
 For gazebo to find the meshes, create a symlink:
