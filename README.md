@@ -37,8 +37,16 @@ git clone --recursive https://github.com/Roboy/ss18_xylophone_playing.git
 cd ss18_xylophone_playing
 ```
 
-Make sure to checkout to the master branch for each of the submodules apart from `src/roboy_simulation/`, which needs to be on branch `caspr_independent` on an older commit in case the CASPR versions are not compatible (8ce5fc9119b9c3069f2204df18a086c92b1e66ca) and `src/roboy_controller/` on `sxp-moveit-independent`. 
+As parts of this project are still being worked on you need specific branches for it to work. Even then the point where we stopped developing is given by the specific commits. It might sitll work on HEAD tho.
 
+Submodule -> Branch -> Commit
+- common_utils master HEAD
+- roboy_communication roboticsLibrary 6ddc92e44c79251f530580ea9ad5e74624532405
+- roboy_controller roboticsLibrary 6e28d176f29e164dcbf950c42b6d4cdf59f2b4b8
+- roboy_models devel 26a160ad8a6d48277e76705757fd9cce649baa1e
+- roboy_moveit_configs master HEAD
+- roboy_rqt_plugins master HEAD
+- roboy_simulation roboticsLibrary 34ee80505d507a6cf5d54763746db4508ec6a2c9
 
 #### The roboy_simulation repository is private for now due to copyright reasons. Therefore you need to ask for permission to clone!
 
@@ -75,6 +83,25 @@ Add whatever other models you need in the same manner.
 #!bash
 roslaunch roboy_controller roboy.launch
 ```
+in a new terminal:
+```
+#!bash
+rviz&
+```
+Now wait until u see waiting for input in your terminal and use e.g.
+```
+#!bash
+rosparam set /key 'key_F'
+```
+Note that not all the keys are reachable with just one arm, you can check which ones have a solution in the first terminal window. During the init phase a list of keys will be printed.
+
+Once you see roboy has reached the target position use
+```
+#!bash
+rosparam set /roboy_state 'done'
+```
+to let him know :).
+
 # Further Info
 For more info on the project visit our Confluence Page:
 https://devanthro.atlassian.net/wiki/spaces/SS18/pages/280100944/Movement+Control
