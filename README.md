@@ -38,6 +38,7 @@ cd ss18_xylophone_playing
 ```
 
 As parts of this project are still being worked on you need specific branches for it to work. Even then the point where we stopped developing is given by the specific commits. It might sitll work on HEAD tho.
+Use the devel branch on this repository.
 
 Submodule -> Branch -> Commit
 - common_utils master HEAD
